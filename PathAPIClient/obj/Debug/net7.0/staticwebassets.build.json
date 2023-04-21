@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "dVs7gjR9K8gVpKQo7HgB4IJD4dC0om0b/rE7dbm6EyY=",
+  "Source": "PathAPIClient",
+  "BasePath": "_content/PathAPIClient",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

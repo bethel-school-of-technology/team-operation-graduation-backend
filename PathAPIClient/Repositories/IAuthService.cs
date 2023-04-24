@@ -1,9 +1,9 @@
-// using PathAPI.Models;
+using PathAPI.Models;
 
-// namespace PathAPI.Repositories;
+namespace PathAPI.Repositories;
 
-// public interface IAuthService
-// {
-//     User CreateUser(User user);
-//     string SignIn(string email, string password);
-// }
+public interface IAuthService
+{
+    User CreateUser(User user);
+    string SignIn(string email, string password);
+}

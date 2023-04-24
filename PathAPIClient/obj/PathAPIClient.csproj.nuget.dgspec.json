@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tyler\\OneDrive\\Desktop\\FinalProject\\Path\\PathAPIClient\\PathAPIClient.csproj": {}
+    "C:\\Users\\tyler\\OneDrive\\Documents\\GitHub\\team-operation-graduation-backend\\PathAPIClient\\PathAPIClient.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tyler\\OneDrive\\Desktop\\FinalProject\\Path\\PathAPIClient\\PathAPIClient.csproj": {
+    "C:\\Users\\tyler\\OneDrive\\Documents\\GitHub\\team-operation-graduation-backend\\PathAPIClient\\PathAPIClient.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tyler\\OneDrive\\Desktop\\FinalProject\\Path\\PathAPIClient\\PathAPIClient.csproj",
+        "projectUniqueName": "C:\\Users\\tyler\\OneDrive\\Documents\\GitHub\\team-operation-graduation-backend\\PathAPIClient\\PathAPIClient.csproj",
         "projectName": "PathAPIClient",
-        "projectPath": "C:\\Users\\tyler\\OneDrive\\Desktop\\FinalProject\\Path\\PathAPIClient\\PathAPIClient.csproj",
+        "projectPath": "C:\\Users\\tyler\\OneDrive\\Documents\\GitHub\\team-operation-graduation-backend\\PathAPIClient\\PathAPIClient.csproj",
         "packagesPath": "C:\\Users\\tyler\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tyler\\OneDrive\\Desktop\\FinalProject\\Path\\PathAPIClient\\obj\\",
+        "outputPath": "C:\\Users\\tyler\\OneDrive\\Documents\\GitHub\\team-operation-graduation-backend\\PathAPIClient\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\tyler\\AppData\\Roaming\\NuGet\\NuGet.Config",

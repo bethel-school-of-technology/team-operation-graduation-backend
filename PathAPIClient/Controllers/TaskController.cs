@@ -26,6 +26,13 @@ public class TaskController : ControllerBase
     }
 
     [HttpGet]
+    [Route("{workspaceId}")]
+    public async Task<ActionResult<IEnumerable<T>>> GetTasksByWorkspaceId(string workspaceId)
+    {
+        return Ok(await _taskRepository.GetTasksByWorkspaceId(workspaceId));
+    }
+
+    [HttpGet]
     [Route("{taskId}")]
     public async Task<ActionResult<T>> GetTaskById(string taskId) 
     {

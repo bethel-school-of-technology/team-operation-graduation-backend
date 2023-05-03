@@ -9,12 +9,12 @@ public class AuthService : IAuthService
 {
     private readonly IMongoCollection<User> _user;
 
-    public AuthService(IOptions<UserDatabaseSettings> settings)
+    public AuthService(IOptions<PathDatabaseSettings> settings)
     {
-        var client = new MongoClient(settings.Value.UserConnectionString);
-        var database = client.GetDatabase(settings.Value.UserDatabaseName);
+        var client = new MongoClient(settings.Value.ConnectionString);
+        var database = client.GetDatabase(settings.Value.DatabaseName);
 
-        _user = database.GetCollection<User>(settings.Value.UserCollectionName);
+        _user = database.GetCollection<User>(settings.Value.CollectionName);
     }
     
     public User CreateUser(User user)
@@ -28,6 +28,19 @@ public class AuthService : IAuthService
 
     public string SignIn(string email, string password)
     {
-        throw new NotImplementedException();
+        var user = _user.FindAsync<User>(x => x.Email == email);
+        var verified = false;
+
+        // if(user != null) 
+        // {
+        //     verified = bcrypt.Verify(password, user.Password);
+        // }
+
+        if(user == null || !verified)
+        {
+            return String.Empty;
+        }
+
+        return "Build Token";
     }
 }

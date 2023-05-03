@@ -9,6 +9,8 @@ public class T
     [BsonId]
     [BsonRepresentation(BsonType.ObjectId)] 
     public string? Id { get; set; }
+    [BsonElement("WorkspaceId")]
+    public string? WorkspaceId { get; set; }
     [Required]
     [BsonElement("Name")]
     public string? Name { get; set; }

@@ -8,12 +8,12 @@ public class WorkspaceRepository : IWorkspaceRepository
 {
     private readonly IMongoCollection<Workspace> _workspace;
 
-    public WorkspaceRepository(IOptions<WorkspaceDatabaseSettings> settings)
+    public WorkspaceRepository(IOptions<PathDatabaseSettings> settings)
     {
-        var client = new MongoClient(settings.Value.WorkspaceConnectionString);
-        var database = client.GetDatabase(settings.Value.WorkspaceDatabaseName);
+        var client = new MongoClient(settings.Value.ConnectionString);
+        var database = client.GetDatabase(settings.Value.DatabaseName);
 
-        _workspace = database.GetCollection<Workspace>(settings.Value.WorkspaceCollectionName);
+        _workspace = database.GetCollection<Workspace>(settings.Value.CollectionName);
     }
 
     public async Task<IEnumerable<Workspace>> GetWorkspaces()

@@ -7,18 +7,25 @@ namespace PathAPI.Repositories;
 public class TaskRepository : ITaskRepository
 {
     private readonly IMongoCollection<T> _task;
-    public TaskRepository(IOptions<TaskDatabaseSettings> settings)
+    public TaskRepository(IOptions<PathDatabaseSettings> settings)
     {
-        var client = new MongoClient(settings.Value.TaskConnectionString);
-        var database = client.GetDatabase(settings.Value.TaskDatabaseName);
+        var client = new MongoClient(settings.Value.ConnectionString);
+        var database = client.GetDatabase(settings.Value.DatabaseName);
 
-        _task = database.GetCollection<T>(settings.Value.TaskCollectionName);
+        _task = database.GetCollection<T>(settings.Value.CollectionName);
     }
     public async Task<IEnumerable<T>> GetAllTasks()
     {
         var allTasks = await _task.FindAsync(task => true);
         return allTasks.ToList();
     }
+
+    public async Task<IEnumerable<T>> GetTasksByWorkspaceId(string workspaceId) 
+    {
+        var tasks = await _task.FindAsync<T>(x => x.WorkspaceId == workspaceId);
+        return tasks.ToList();
+    }
+
     public async Task<T?> GetTaskById(string taskId)
     {
         var taskFound = await _task.FindAsync<T>(task => task.Id == taskId);

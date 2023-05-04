@@ -32,8 +32,9 @@ public class TaskRepository : ITaskRepository
         return taskFound.FirstOrDefault();
     }
 
-    public async Task<T> CreateTask(T newTask)
+    public async Task<T> CreateTask(T newTask, string workspaceId)
     {
+        newTask.WorkspaceId = workspaceId;
         await _task.InsertOneAsync(newTask);
         return newTask;
     }

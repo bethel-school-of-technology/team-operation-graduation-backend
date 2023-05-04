@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tyler\\OneDrive\\Documents\\GitHub\\team-operation-graduation-backend\\PathAPIClient\\PathAPIClient.csproj": {}
+    "/Users/karamullaly/Desktop/team-operation-graduation-backend/PathAPIClient/PathAPIClient.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tyler\\OneDrive\\Documents\\GitHub\\team-operation-graduation-backend\\PathAPIClient\\PathAPIClient.csproj": {
+    "/Users/karamullaly/Desktop/team-operation-graduation-backend/PathAPIClient/PathAPIClient.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tyler\\OneDrive\\Documents\\GitHub\\team-operation-graduation-backend\\PathAPIClient\\PathAPIClient.csproj",
+        "projectUniqueName": "/Users/karamullaly/Desktop/team-operation-graduation-backend/PathAPIClient/PathAPIClient.csproj",
         "projectName": "PathAPIClient",
-        "projectPath": "C:\\Users\\tyler\\OneDrive\\Documents\\GitHub\\team-operation-graduation-backend\\PathAPIClient\\PathAPIClient.csproj",
-        "packagesPath": "C:\\Users\\tyler\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tyler\\OneDrive\\Documents\\GitHub\\team-operation-graduation-backend\\PathAPIClient\\obj\\",
+        "projectPath": "/Users/karamullaly/Desktop/team-operation-graduation-backend/PathAPIClient/PathAPIClient.csproj",
+        "packagesPath": "/Users/karamullaly/.nuget/packages/",
+        "outputPath": "/Users/karamullaly/Desktop/team-operation-graduation-backend/PathAPIClient/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\tyler\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/karamullaly/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -76,7 +74,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.203/RuntimeIdentifierGraph.json"
         }
       }
     }

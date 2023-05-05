@@ -9,10 +9,11 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.Configure<PathDatabaseSettings>(
+builder.Services.Configure<WorkspaceDatabaseSettings>(
     builder.Configuration.GetSection("WorkspaceDatabaseSettings"));
-    builder.Configuration.GetSection("TaskDatabaseSettings");
-    builder.Configuration.GetSection("UserDatabaseSettings");
+builder.Services.Configure<TaskDatabaseSettings>(
+    builder.Configuration.GetSection("TaskDatabaseSettings"));
+
 builder.Services.AddScoped<IWorkspaceRepository, WorkspaceRepository>();
 builder.Services.AddScoped<ITaskRepository, TaskRepository>();
 var app = builder.Build();

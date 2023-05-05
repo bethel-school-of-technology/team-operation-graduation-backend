@@ -7,7 +7,7 @@ namespace PathAPI.Repositories;
 public class TaskRepository : ITaskRepository
 {
     private readonly IMongoCollection<T> _task;
-    public TaskRepository(IOptions<PathDatabaseSettings> settings)
+    public TaskRepository(IOptions<TaskDatabaseSettings> settings)
     {
         var client = new MongoClient(settings.Value.ConnectionString);
         var database = client.GetDatabase(settings.Value.DatabaseName);

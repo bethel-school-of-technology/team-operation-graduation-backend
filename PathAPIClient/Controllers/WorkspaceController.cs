@@ -58,7 +58,7 @@ public class WorkspaceController : ControllerBase
 
     [HttpDelete]
     [Route("{workspaceId}")]
-    public async Task<ActionResult<IEnumerable<Workspace>>> DeleteCoffee(string workspaceId) 
+    public async Task<ActionResult<IEnumerable<Workspace>>> DeleteWorkspace(string workspaceId) 
     {
         await _workspaceRepository.DeleteWorkspaceById(workspaceId); 
         return NoContent();

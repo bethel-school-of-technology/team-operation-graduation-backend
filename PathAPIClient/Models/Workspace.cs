@@ -14,6 +14,4 @@ public class Workspace {
     [Required]
     [BsonElement("Description")]
     public string? Description { get; set; }
-    [BsonElement("Goals")]
-    public string[]? Goals { get; set; }
 }

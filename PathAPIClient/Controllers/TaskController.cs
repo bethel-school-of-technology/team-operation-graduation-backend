@@ -26,7 +26,7 @@ public class TaskController : ControllerBase
     }
 
     [HttpGet]
-    [Route("{workspaceId}")]
+    [Route("WS/{workspaceId}")]
     public async Task<ActionResult<IEnumerable<T>>> GetTasksByWorkspaceId(string workspaceId)
     {
         return Ok(await _taskRepository.GetTasksByWorkspaceId(workspaceId));
@@ -44,12 +44,12 @@ public class TaskController : ControllerBase
     }
 
     [HttpPost]
-    public async Task<ActionResult<T>> CreateTask(T task)
+    public async Task<ActionResult<T>> CreateTask(T task, string workspaceId)
     {
         if(!ModelState.IsValid || task == null) {
             return BadRequest();
         }
-        var newTask = _taskRepository.CreateTask(task);
+        var newTask = _taskRepository.CreateTask(task, workspaceId);
         return Created(nameof (GetTaskById), await newTask);
     }
 
@@ -65,7 +65,7 @@ public class TaskController : ControllerBase
 
     [HttpDelete]
     [Route("{taskId}")]
-    public async Task<ActionResult<IEnumerable<T>>> DeleteCoffee(string taskId) 
+    public async Task<ActionResult<IEnumerable<T>>> DeleteTask(string taskId) 
     {
         await _taskRepository.DeleteTaskById(taskId); 
         return NoContent();

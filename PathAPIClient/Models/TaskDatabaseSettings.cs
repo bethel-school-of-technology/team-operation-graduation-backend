@@ -1,6 +1,6 @@
 namespace PathAPI.Models;
 
-public class WorkspaceDatabaseSettings
+public class TaskDatabaseSettings
 {
     public string? CollectionName { get; set; } = null!;
     public string? ConnectionString { get; set; } = null!;

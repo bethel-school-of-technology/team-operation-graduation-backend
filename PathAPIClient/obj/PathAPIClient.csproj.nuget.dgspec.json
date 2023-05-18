@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/karamullaly/Desktop/team-operation-graduation-backend/PathAPIClient/PathAPIClient.csproj": {}
+    "/Users/karamullaly/Desktop/Project/team-operation-graduation-backend/PathAPIClient/PathAPIClient.csproj": {}
   },
   "projects": {
-    "/Users/karamullaly/Desktop/team-operation-graduation-backend/PathAPIClient/PathAPIClient.csproj": {
+    "/Users/karamullaly/Desktop/Project/team-operation-graduation-backend/PathAPIClient/PathAPIClient.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/karamullaly/Desktop/team-operation-graduation-backend/PathAPIClient/PathAPIClient.csproj",
+        "projectUniqueName": "/Users/karamullaly/Desktop/Project/team-operation-graduation-backend/PathAPIClient/PathAPIClient.csproj",
         "projectName": "PathAPIClient",
-        "projectPath": "/Users/karamullaly/Desktop/team-operation-graduation-backend/PathAPIClient/PathAPIClient.csproj",
+        "projectPath": "/Users/karamullaly/Desktop/Project/team-operation-graduation-backend/PathAPIClient/PathAPIClient.csproj",
         "packagesPath": "/Users/karamullaly/.nuget/packages/",
-        "outputPath": "/Users/karamullaly/Desktop/team-operation-graduation-backend/PathAPIClient/obj/",
+        "outputPath": "/Users/karamullaly/Desktop/Project/team-operation-graduation-backend/PathAPIClient/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/karamullaly/.nuget/NuGet/NuGet.Config"
